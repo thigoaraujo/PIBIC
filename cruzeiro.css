@@ -1,30 +1,34 @@
 /* Importa a fonte Roboto do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap');
 
+/* Reseta margens e preenchimentos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Configurações gerais para o corpo do documento */
 body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Define a fonte para Roboto */
+    background-color: #fff; /* Define a cor de fundo como branco */
 }
 
+/* Estilo para o cabeçalho (header) */
 header {
     width: calc(100% - 0px);
     background-color: rgb(22, 67, 121);
     padding: 10px;
-    margin-bottom: -90px;
+    margin-bottom: 0px;
     background-attachment: fixed;
 }
 
 /* Estilo para a imagem no cabeçalho */
 header img {
-    position: relative;
-    background-attachment: fixed;
+    background-attachment: fixed; /* para fixar a imagem no lugar */
+    background-repeat: no-repeat;
     background-size: cover;
+    float: right;
     top: -90px;
     left: 1250px;
     width: 100px;
@@ -32,43 +36,62 @@ header img {
 }
 
 /* Estilo para o título no cabeçalho */
-h5 {
+h1 {
     font-size: 2.0rem;
     line-height: 2.0;
     color: #fff;
+    
 }
 
-h4 {
+h2 {
     font-size: 1.0rem;
     line-height: 2.0;
     color: #fff;
+   
+}
+h4 {
+    font-size: 2.0rem;
+    line-height: 2.0;
+    color: #000000;
+   
 }
 
-nav {
+h5{
+    font-size: 1.0rem;
+    line-height: 3.0;
+    color: #000000;
+    text-align: center;
+}
+
+.menu {
     background-color: rgb(14, 71, 140);
     text-align: center;
     padding: 10px 0;
+    width: calc(100% - 0px);
 }
 
-nav ul {
+.menu ul {
     list-style-type: none;
 }
 
-nav li {
+.menu li {
     display: inline-block;
 }
 
-nav li a {
-    color: #fff;
+.menu li a {
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 15px;
     font-size: 1.2rem;
+    font-weight: bold;
+    text-align: justify;
 }
 
-nav li a:hover {
+.menu li a:hover {
     color: #000;
 }
 
+/* Estilo para o menu dropdown */
 .dropdown-menu {
     position: absolute;
     box-shadow: 0 0 2px rgb(255, 255, 255);
@@ -88,6 +111,21 @@ nav li a:hover {
     display: block;
 }
 
+
+.planoFundo {
+    background-image: url('img/cruzeiro1.jpg');
+    background-attachment: fixed; /* para fixar a imagem no lugar */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(103% - 50px);
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
 article {
     width: 100%;
     background-color: #fff;
@@ -95,9 +133,7 @@ article {
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
+h3, h4{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 20px;
@@ -126,7 +162,7 @@ footer {
 
 section {
     width: calc(50% - 20px);
-    background-color: rgba(57, 138, 237, 0.573);
+    background-color: rgb(241, 241, 241);
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 25px;
@@ -136,12 +172,12 @@ section h3 {
     color: #000;
 }
 
-.PlanoDeTrabalho {
-    background-color: rgba(57, 138, 237, 0.573);
-    width: calc(145% - 50px);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 25px;
+section h4 a{
+    color: #0a023a;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .programa {
@@ -158,18 +194,7 @@ section h3 {
     border-radius: 25px;
 }
 
-.planoFundo {
-    background-image: url('img/cruzeiro1.jpg');
-    background-attachment: fixed; /* para fixar a imagem no lugar */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: calc(103% - 50px);
-    padding: 100px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    color: #fff;
-    font-weight: bold;
-}
+
 
 .titulo{
 
