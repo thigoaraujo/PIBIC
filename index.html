@@ -2,34 +2,40 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Django Dropdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoramento Digital</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="index.js"></script>
+    
 </head>
 <body>
-    <header>
-        <h1>Monitoramento Digital</h1>
-        <h2>de programas e projetos nas escolas do ensino médio do GDF-Plano Piloto</h2>
+    
+    <header> 
+        
         <img id="cnpq" src="img/banner.jpg" alt="Banner contendo o logo do site e o título 'Monitoramento Digital'">
         <img id="ifb" src="img/1200px-Instituto_Federal_de_Brasília_-_Marca_Vertical_2015.svg.png" alt="Logo do Instituto Federal de Brasília">
+        <h1>Monitoramento Digital</h1>
+        <h2>de programas e projetos nas escolas do ensino médio do GDF-Plano Piloto</h2>
+       
     </header>
 
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="#">Sobre o monitoramento digital</a></li>
-            <li><a href="#">Políticas públicas educacionais</a></li>
+            <li><a href="ProjetosProgramas.html">Projetos e Programas educacionais</a></li>
             <li class="dropdown">
                 <a href="#">Escolas</a>
                 <div class="dropdown-menu">
-                    <a href="cruzeiro.html">Cruzeiro</a>
-                    <a href="#">Escola 2</a>
-                    <a href="#">Escola 3</a>
+                    <a href="CEMIdoCruzeiro.html">CEMI Cruzeiro</a>
+                    <a href="CEMasanorte.html">CEM Asa Norte</a>
+                    <a href="cemelefantebranco.html">CEM Elefante Branco</a>
+                    <a href="CEMPauloFreire.html">CEM Paulo Freire</a>
+                    <a href="CEMStLeste.html">CEM St Leste</a>
+                    <a href="CEMStOeste.html">CEM St Oeste</a>
                 </div>
-            </li>
-            <li><a href="#">Programas educacionais</a></li>
         </ul>
     </nav>
+
 
     <article>
         <h3>Monitoramento Digital</h3>
@@ -62,5 +68,6 @@
         <p>Desenvolvido por <a>Thiago Araújo & Maria Fernanda</a> - 2023</p>
     </u>
     </footer>
+
 </body>
 </html>
