@@ -19,15 +19,16 @@ header {
     width: calc(100% - 0px);
     background-color: rgb(22, 67, 121);
     padding: 10px;
-    margin-bottom: -90px;
+    margin-bottom: 0px;
     background-attachment: fixed;
 }
 
 /* Estilo para a imagem no cabeçalho */
 header img {
-    position: relative;
-    background-attachment: fixed;
+    background-attachment: fixed; /* para fixar a imagem no lugar */
+    background-repeat: no-repeat;
     background-size: cover;
+    float: right;
     top: -90px;
     left: 1250px;
     width: 100px;
@@ -47,29 +48,31 @@ h2 {
     color: #fff;
 }
 
-nav {
+.menu {
     background-color: rgb(14, 71, 140);
     text-align: center;
     padding: 10px 0;
     width: calc(100% - 0px);
 }
 
-nav ul {
+.menu ul {
     list-style-type: none;
 }
 
-nav li {
+.menu li {
     display: inline-block;
 }
 
-nav li a {
-    color: #fff;
+.menu li a {
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 15px;
     font-size: 1.2rem;
+    font-weight: bold;
+    text-align: justify;
 }
 
-nav li a:hover {
+.menu li a:hover {
     color: #000;
 }
 
@@ -103,10 +106,10 @@ article {
 .container {
     display: flex;
     align-items: center;
-    background-color: rgba(57, 138, 237, 0.573);
+    background-color: rgb(241, 241, 241);
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
@@ -137,10 +140,10 @@ p {
 
 /* Estilo para as seções */
 section {
-    background-color: rgba(57, 138, 237, 0.573);
+    background-color: rgb(241, 241, 241);
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+    border-radius: 15px;
     margin-bottom: 20px;
     align-items: center;
 }
@@ -172,3 +175,5 @@ footer {
     padding: 5px;
     margin-bottom: 0px;
 }
+
+    
